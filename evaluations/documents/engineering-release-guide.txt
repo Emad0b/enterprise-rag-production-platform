@@ -1,0 +1,1 @@
+Production deployments require passing automated tests and approval from the service owner. The default canary receives 20 percent of request traffic. Rollback must be initiated if the error rate exceeds two percent. Release reviews happen every Thursday at 14:00.

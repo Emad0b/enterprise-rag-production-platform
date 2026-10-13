@@ -1,0 +1,1 @@
+Security incidents must be reported to the security team within one hour of discovery. Employees should disconnect affected devices from the network and preserve evidence. The security help desk email is security@example.test. Production access requires hardware security keys and quarterly access reviews.

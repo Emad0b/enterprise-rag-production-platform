@@ -1,0 +1,14 @@
+.git
+.env
+.deps
+.venv
+runtime
+test-rag-*
+frontend/node_modules
+frontend/dist
+frontend/test-results
+docs
+reports
+mlruns
+mlartifacts
+**/__pycache__

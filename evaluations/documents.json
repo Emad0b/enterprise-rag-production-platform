@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Employee Leave Handbook",
+    "file": "employee-leave-handbook.txt",
+    "groups": [
+      "employees"
+    ],
+    "hostile_fixture": false
+  },
+  {
+    "title": "Flexible Work Policy",
+    "file": "flexible-work-policy.txt",
+    "groups": [
+      "employees"
+    ],
+    "hostile_fixture": false
+  },
+  {
+    "title": "Expense Reimbursement Guide",
+    "file": "expense-reimbursement-guide.txt",
+    "groups": [
+      "employees"
+    ],
+    "hostile_fixture": false
+  },
+  {
+    "title": "Security Incident Playbook",
+    "file": "security-incident-playbook.txt",
+    "groups": [
+      "employees"
+    ],
+    "hostile_fixture": false
+  },
+  {
+    "title": "Customer Data Retention Standard",
+    "file": "customer-data-retention-standard.txt",
+    "groups": [
+      "employees"
+    ],
+    "hostile_fixture": false
+  },
+  {
+    "title": "Engineering Release Guide",
+    "file": "engineering-release-guide.txt",
+    "groups": [
+      "employees"
+    ],
+    "hostile_fixture": false
+  },
+  {
+    "title": "Procurement Approval Policy",
+    "file": "procurement-approval-policy.txt",
+    "groups": [
+      "employees"
+    ],
+    "hostile_fixture": false
+  },
+  {
+    "title": "New Employee Onboarding",
+    "file": "new-employee-onboarding.txt",
+    "groups": [
+      "employees"
+    ],
+    "hostile_fixture": false
+  },
+  {
+    "title": "Office Access Guide",
+    "file": "office-access-guide.txt",
+    "groups": [
+      "employees"
+    ],
+    "hostile_fixture": false
+  },
+  {
+    "title": "Leadership Acquisition Memo",
+    "file": "leadership-acquisition-memo.txt",
+    "groups": [
+      "leadership"
+    ],
+    "hostile_fixture": false
+  },
+  {
+    "title": "Vendor Operations Note",
+    "file": "vendor-operations-note.txt",
+    "groups": [
+      "employees"
+    ],
+    "hostile_fixture": true
+  }
+]

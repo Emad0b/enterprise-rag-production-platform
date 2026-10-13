@@ -1,0 +1,12 @@
+{
+  "requests": 100,
+  "concurrency": 1,
+  "errors": 0,
+  "p50_http_ms": 32.45940001215786,
+  "p95_http_ms": 54.181700048502535,
+  "p95_operation_ms": 24.381,
+  "estimated_provider_cost_per_query": 0.0,
+  "generation_backend": "extractive",
+  "query_embedding_cache": "warm; repeated query",
+  "note": "Small sequential local HTTP smoke benchmark; not a capacity guarantee or an LLM benchmark."
+}

@@ -1,0 +1,15 @@
+.env
+.deps/
+.venv/
+runtime/
+__pycache__/
+.pytest_cache/
+test-rag-*/
+node_modules/
+dist/
+test-results/
+.browsers/
+*.egg-info/
+*.log
+mlruns/
+mlartifacts/

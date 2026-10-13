@@ -1,0 +1,17 @@
+groups:
+  - name: rag-release-safety
+    rules:
+      - alert: RAGLatencyBudgetExceeded
+        expr: histogram_quantile(0.95, sum(rate(rag_query_seconds_bucket{kind="live"}[5m])) by (le)) > 0.75
+        for: 2m
+        labels: {severity: warning}
+        annotations: {summary: "RAG p95 exceeds the 750 ms operation budget"}
+      - alert: RAGGenerationErrors
+        expr: sum(rate(rag_queries_total{kind="live",result="error"}[5m])) > 0
+        for: 1m
+        labels: {severity: critical}
+        annotations: {summary: "RAG generation or retrieval errors detected"}
+      - alert: RAGHostileDocumentsObserved
+        expr: delta(rag_recorded_hostile_contexts[5m]) > 0
+        labels: {severity: warning}
+        annotations: {summary: "Hostile retrieved context requires review"}

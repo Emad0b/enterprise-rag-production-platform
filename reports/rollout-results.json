@@ -1,0 +1,51 @@
+{
+  "fictional_corpus": true,
+  "generation": "extractive",
+  "traffic": "Actual HTTP requests to the running API",
+  "restricted_explicit_id_status": 404,
+  "initial_champion": "2c5f289a2c5523f1",
+  "candidate": "26ef565207d276dc",
+  "events": [
+    {
+      "mode": "shadow",
+      "requests_sent": 25,
+      "checks": {
+        "passed": true,
+        "requests": 25,
+        "error_rate": 0.0,
+        "p95_ms": 42.38529998110607,
+        "cost_per_query": 0.0,
+        "reasons": []
+      },
+      "completion": {
+        "passed": true,
+        "champion": "2c5f289a2c5523f1",
+        "shadow_completed": "1372c148-4449-4898-95ea-e771fd3d55b4"
+      },
+      "observed_routing": {
+        "2c5f289a2c5523f1": 25
+      }
+    },
+    {
+      "mode": "canary",
+      "requests_sent": 125,
+      "checks": {
+        "passed": true,
+        "requests": 25,
+        "error_rate": 0.0,
+        "p95_ms": 31.428399961441755,
+        "cost_per_query": 0.0,
+        "reasons": []
+      },
+      "completion": {
+        "passed": true,
+        "champion": "26ef565207d276dc"
+      },
+      "observed_routing": {
+        "26ef565207d276dc": 25,
+        "2c5f289a2c5523f1": 100
+      }
+    }
+  ],
+  "note": "Each stage is explicitly approved by this local demonstration script; shadow completion does not deploy the candidate."
+}

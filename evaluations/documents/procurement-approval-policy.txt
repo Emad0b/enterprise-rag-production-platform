@@ -1,0 +1,1 @@
+Purchases above 1000 pounds require finance approval. Purchases above 5000 pounds require approval from the department director. Approved vendors must complete a security assessment before receiving customer data. Purchase requests are submitted through the Procurement Portal.
