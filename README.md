@@ -115,7 +115,7 @@ Other interfaces:
 - Prometheus: **http://localhost:9092**
 - Development object store console: **http://localhost:9102**
 
-All published ports bind to localhost. PostgreSQL, object storage and application artifacts persist in separate Docker volumes. `.env`, credentials, uploaded objects and runtime state are excluded from Git. The pinned MinIO image is a development S3 fixture; its community repository is archived. Use a supported S3 service for actual deployment, as discussed in [the architecture notes](docs/architecture.md).
+All published ports bind to localhost. PostgreSQL, object storage and application artifacts persist in separate Docker volumes. `.env`, credentials, uploaded objects and runtime state are excluded from Git. The pinned RustFS 1.0.1 service supplies the development S3-compatible backend. For actual deployment, configure your supported object-storage service and operational controls; see [the architecture notes](docs/architecture.md).
 
 ## Local development
 

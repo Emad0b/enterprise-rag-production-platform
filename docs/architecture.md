@@ -33,6 +33,6 @@ The sample runs one API process. Shared process locks are insufficient for multi
 
 Known attack-pattern filtering has evasion risks. No tools or arbitrary URL fetches are available to the assistant. A malicious document can still contain misleading factual statements, and valid citations can cite false source facts. Add reviewed documents, larger adversarial suites, human relevance labels and provider-specific red-team evaluations for a real rollout.
 
-The development MinIO image is pinned for reproducibility. Its community repository is archived; use a supported S3 implementation for real deployment. See the [MinIO repository and release status](https://github.com/minio/minio/releases/tag/RELEASE.2025-04-22T22-12-26Z).
+The development S3 service uses a pinned RustFS 1.0.1 image and a persistent named volume. See the [official container documentation](https://docs.rustfs.com/en/installation/container/docker). Use the same S3 adapter with your chosen operational object store, credentials and access policies for real deployment.
 
 Prometheus rules fire alert states; notifications require an Alertmanager receiver. Configure retention, redaction, tenant isolation, TLS and network policies for a real organisation. This project demonstrates production engineering patterns; its fictional corpus and development authentication do not constitute a production deployment.

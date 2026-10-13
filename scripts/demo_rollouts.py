@@ -45,6 +45,13 @@ if __name__ == "__main__":
     restricted = next(
         d["id"] for d in documents if d["title"] == "Leadership Acquisition Memo"
     )
+    public = next(d["id"] for d in documents if d["title"] == "Employee Leave Handbook")
+    request = urllib.request.Request(
+        BASE + f"/api/documents/{public}/content",
+        headers={"Authorization": "Bearer " + staff},
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        assert response.status == 200 and b"24 days" in response.read()
     denied_status, _ = call(
         "/query",
         {
@@ -127,6 +134,7 @@ if __name__ == "__main__":
         "generation": "extractive",
         "traffic": "Actual HTTP requests to the running API",
         "restricted_explicit_id_status": denied_status,
+        "authorised_object_download": True,
         "initial_champion": champion,
         "candidate": candidate["id"],
         "events": events,
